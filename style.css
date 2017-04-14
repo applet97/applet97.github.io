@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+body {
+	text-align: center;
+}
+
+.container {
+	padding: 50px 50px;
+	/*margin-top: 120px;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.board {
+	width: 450px;
+	height: 450px;
+	display: flex;
+	flex-wrap: wrap;
+	/*background: #2980b9;*/
+}
+
+.square {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	border-radius: 15px;
+	color: white;
+	font-size: 3.5em;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: #e9e9a9;
+}
+
+.squareX {
+	background: #9b59b6;
+}
+
+.squareO {
+	background: #f39c12;
+}
+
+.leftSide, .rightSide {
+	width: 150px;
+	height: 450px;
+	background: white;
+	border: 1px solid black;
+}
+
+.log {
+	text-align: center;
+	background: #2980b9;
+}
+
+.resetButton {
+	width: 450px;
+	height: 50px;
+	outline: none;
+	background: #e74c3c;
+	border:none;
+	border-radius: 15px;
+	border-bottom: 5px solid #c0392b;
+	font-size: 1em;
+	color: white;
+}
+
+.resetButton:active {
+	outline:none;
+	border: none;
+}
+
+.modal {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0);
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	/*margin-top: 60px;*/
+	/*padding-top: 20px;*/
+	display: none;
+	
+	color: green;
+}
+
+.open {
+	display: block;
+}
+
+.msg {
+	width: 400px;
+	height: 200px;
+	background: rgba(20, 20, 20, 0);
+	margin: 0 auto;
+	padding-top: 80px;
+	margin-top: -60px;
+	box-sizing: border-box;
+	text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+	/*box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);*/
+}
+
+.score {
+	color: #27ae60;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.lines {
+	background: red;
+	position: absolute;
+	display: none;
+	border-radius: 10px;
+}
+
+.line1, .line2, .line3 {
+	width: 400px;
+	height: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.line4, .line5, .line6 {
+	width: 10px;
+	height: 400px;
+	margin-top: 25px;
+}
+
+.line7, .line8 {
+	width: 550px;
+	height: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	margin-top: 225px;
+
+}
+
+.line1 {
+	margin-top: 70px;
+}
+
+.line2 {
+	margin-top: 220px;
+}
+
+.line3 {
+	margin-top: 370px;	
+}
+.line4 {
+	margin-left: 70px;
+}
+.line5 {
+	margin-left: 220px;
+}
+
+.line6 {
+	margin-left: 370px;
+}
+.line7 {
+	transform: rotate(45deg);
+}
+
+.line8 {
+	transform: rotate(-45deg);
+}
+
+.trace {
+	display: block;
+}
